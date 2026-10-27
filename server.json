@@ -1,0 +1,37 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.CurrencyFreaks/currencyfreaks-mcp",
+  "title": "CurrencyFreaks",
+  "description": "Real-time and historical exchange rates and currency conversion for 1000+ currencies.",
+  "repository": {
+    "url": "https://github.com/CurrencyFreaks/currencyfreaks-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://currencyfreaks.com",
+  "version": "1.0.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@currencyfreaks/mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "CURRENCYFREAKS_API_KEY",
+          "description": "Your CurrencyFreaks API key (get one at https://currencyfreaks.com)",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "CURRENCYFREAKS_REQUEST_TIMEOUT_MS",
+          "description": "Request timeout in milliseconds (default 15000)",
+          "isRequired": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}

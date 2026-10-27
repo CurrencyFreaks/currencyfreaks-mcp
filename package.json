@@ -1,6 +1,7 @@
 {
   "name": "@currencyfreaks/mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "mcpName": "io.github.CurrencyFreaks/currencyfreaks-mcp",
   "description": "Official MCP server for CurrencyFreaks — real-time and historical exchange rates and currency conversion for 1000+ fiat, crypto, and metal currencies as MCP tools for Claude, Cursor, Windsurf, and any MCP client.",
   "keywords": [
     "mcp",
